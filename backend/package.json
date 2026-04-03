@@ -12,7 +12,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@google/genai": "^1.48.0",
+    "@anthropic-ai/sdk": "^0.82.0",
+    "dotenv": "^17.4.0",
     "express": "^5.2.1"
   },
   "devDependencies": {
