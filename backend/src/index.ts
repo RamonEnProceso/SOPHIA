@@ -1,5 +1,6 @@
 import express  from "express";
 import 'dotenv/config'
+import systemPrompt from "./iaPrompt";
 
 const app = express();
 app.use(express.json())
@@ -16,6 +17,15 @@ app.post("/chat", async (req,res) =>{
         return res.status(400).json({ error: "El mensaje es obligatorio" });
     }
 
+    const finalPrompt = `
+    ${systemPrompt}
+    
+    Usuario: ${prompt}
+    SOPHIA:
+    `;
+
+    console.log(finalPrompt);
+
     try{
 
         const response = await fetch("http://localhost:11434/api/generate", {
@@ -24,8 +34,8 @@ app.post("/chat", async (req,res) =>{
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                model: "mistral",
-                prompt,
+                model: "llama3",
+                prompt: finalPrompt,
                 stream: false,
             }),
         });
