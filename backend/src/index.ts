@@ -1,11 +1,8 @@
 import express  from "express";
 import 'dotenv/config'
-import Anthropic from "@anthropic-ai/sdk";
 
 const app = express();
 app.use(express.json())
-
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 app.get("/",(req,res)=>{
     res.send("Hola Mundo")
@@ -13,21 +10,32 @@ app.get("/",(req,res)=>{
 
 app.post("/chat", async (req,res) =>{
    
-    const { message } = req.body;
+    const { prompt } = req.body;
 
-    if (!message){
+    if (!prompt){
         return res.status(400).json({ error: "El mensaje es obligatorio" });
     }
 
     try{
 
-        const response = await client.messages.create({
-            model: "claude-haiku-4-5-20251001",
-            max_tokens: 1024,
-            messages: [{ role: "user", content: message }]
-        })
+        const response = await fetch("http://localhost:11434/api/generate", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                model: "mistral",
+                prompt,
+                stream: false,
+            }),
+        });
 
-        return res.json(response.content[0])
+        const data = await response.json();
+
+        res.json({
+            reply: data.response,
+        });
+
 
     }catch(error){
 
