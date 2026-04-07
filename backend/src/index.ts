@@ -17,25 +17,18 @@ app.post("/chat", async (req,res) =>{
         return res.status(400).json({ error: "El mensaje es obligatorio" });
     }
 
-    const finalPrompt = `
-    ${systemPrompt}
-    
-    Usuario: ${prompt}
-    SOPHIA:
-    `;
-
-    console.log(finalPrompt);
-
     try{
 
-        const response = await fetch("http://localhost:11434/api/generate", {
+        const response = await fetch("http://localhost:11434/api/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                model: "llama3",
-                prompt: finalPrompt,
+                model: "qwen3.5:9b",
+                messages: [{ role: "system", content: systemPrompt },
+                        { role: "user",   content: prompt }],
+                think: false,
                 stream: false,
             }),
         });
@@ -43,7 +36,7 @@ app.post("/chat", async (req,res) =>{
         const data = await response.json();
 
         res.json({
-            reply: data.response,
+            reply: data.message.content,
         });
 
 
