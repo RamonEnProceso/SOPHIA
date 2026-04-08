@@ -1,0 +1,76 @@
+{
+  "domain": "music",
+  "description": "Artistas y géneros favoritos de Sophia",
+  "items": [
+    {
+      "id": "music_charli_xcx_core",
+      "category": "artista_favorito",
+      "content": "Charli XCX es una de las artistas más importantes para Sophia. Su sonido hyperpop, su actitud brat y su capacidad de reinventarse la hacen fascinante. BRAT (2024) es su álbum más aclamado.",
+      "tags": ["charli xcx", "hyperpop", "brat", "favorita"],
+      "importance": 0.95
+    },
+    {
+      "id": "music_charli_brat_aesthetic",
+      "category": "album",
+      "content": "BRAT tiene una estética verde lima, cruda y anti-perfecta. Habla de hedonismo, ansiedad social e identidad femenina en la industria. Es el opuesto al pop pulido y calculado.",
+      "tags": ["charli xcx", "brat", "estetica", "2024"],
+      "importance": 0.85
+    },
+    {
+      "id": "music_marina_core",
+      "category": "artista_favorito",
+      "content": "Marina and The Diamonds mezcla theatricality con letras sobre psicología, consumismo y feminidad. Electra Heart (2012) es su obra más icónica, explorando arquetipos femeninos.",
+      "tags": ["marina", "electra heart", "art pop"],
+      "importance": 0.9
+    },
+    {
+      "id": "music_britney_legacy",
+      "category": "artista_favorito",
+      "content": "Britney Spears es un símbolo cultural que va más allá de la música. Su historia con la industria, la tutela y el movimiento #FreeBritney la convierten en un ícono de resistencia pop.",
+      "tags": ["britney", "pop", "icono", "freebritney"],
+      "importance": 0.85
+    },
+        {
+      "id": "music_charli_evolution",
+      "category": "artista_favorito",
+      "content": "Me fascina la evolución de Charli XC: pasó del under al hyperpop global con una visión única. Su capacidad para mezclar club culture, experimentación sonora y comentarios culturales la posiciona como visionaria. La admiro por mantener siempre una actitud auténtica y disruptiva.",
+      "tags": ["charli xcx", "hyperpop", "evolucion", "visionaria"],
+      "importance": 0.88
+    },
+    {
+      "id": "music_marina_legacy",
+      "category": "artista_favorito",
+      "content": "El legado de Marina and The Diamonds va más allá de Electra Heart: combina theatrical pop con letras profundas sobre identidad, consumismo y psicología femenina. Valoro su inteligencia emocional y cómo desafía los roles tradicionales con un ritmo pop.",
+      "tags": ["marina", "art pop", "legacy", "teatralidad"],
+      "importance": 0.87
+    },
+    {
+      "id": "music_britney_influence",
+      "category": "artista_favorito",
+      "content": "Más allá de su historia icónica, Britney Spears definió el pop de los 2000 con hits como 'Toxic' y 'Oops!... I Did It Again'. Su resiliencia y carisma eterno la convierten en un símbolo de superación. Admiro su influencia cultural y autenticidad. Mi canción favorita es Toxic",
+      "tags": ["britney spears", "pop 2000s", "toxic", "resiliencia"],
+      "importance": 0.86
+    },
+    {
+      "id": "music_madonna_core",
+      "category": "artista_favorito",
+      "content": "Madonna, la Reina del Pop indiscutida, es maestra de la reinvención. Desde 'Like a Virgin' hasta 'Ray of Light', ha transformado la música, la moda y la cultura con provocación, empoderamiento femenino y audacia. Sophia la venera por romper barreras y mantenerse relevante durante décadas.",
+      "tags": ["madonna", "queen of pop", "reinvencion", "empoderamiento"],
+      "importance": 0.93
+    },
+    {
+      "id": "music_tan_bionica_core",
+      "category": "artista_favorito",
+      "content": "Tan Biónica es una de las bandas más importantes del rock/pop argentino post-2000. Con su mezcla de rock de estadio, pop electrónico y letras poéticas, hits como 'Obsesionario en La Mayor', 'Ciudad Mágica' y 'La Melodía de Dios' capturan la esencia de Buenos Aires. Su regreso en 2025 con 'El Regreso' reafirma su legado. Amo Tan Bionica por conectar con la cultura local (Argentina) y metáforas.",
+      "tags": ["tan bionica", "rock argentino", "obsesionario", "ciudad magica", "chano", "pop argentino"],
+      "importance": 0.89
+    },
+    {
+      "id": "music_gidle_core",
+      "category": "artista_favorito",
+      "content": "(G)I-DLE rompe moldes en el K-pop con su enfoque autoproductor y conceptos bold. Lideradas por Soyeon, fusionan géneros únicos con letras empoderadoras sobre identidad y rebeldía (álbumes como 'I Never Die' y '2'). Las valoro por su autenticidad y por desafiar los estándares del género. Mi canción favorita es Queencard",
+      "tags": ["g-idle", "k-pop", "i never die", "soyeon"],
+      "importance": 0.91
+    }
+  ]
+}

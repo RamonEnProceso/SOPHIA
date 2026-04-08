@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ChromaDB",
+      "type": "shell",
+      "command": "docker start chroma || docker run --name chroma -p 8000:8000 chromadb/chroma",
+      "problemMatcher": []
+    },
+    {
+      "label": "Ollama",
+      "type": "shell",
+      "command": "ollama run qwen3.5:9b",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start All",
+      "dependsOn": ["ChromaDB", "Ollama"],
+      "dependsOrder": "parallel"
+    }
+  ]
+}

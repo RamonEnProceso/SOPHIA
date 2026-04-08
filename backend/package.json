@@ -12,8 +12,10 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "chromadb": "^3.4.2",
     "dotenv": "^17.4.0",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "ollama": "^0.6.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
