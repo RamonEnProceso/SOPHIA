@@ -1,0 +1,41 @@
+{
+  "domain": "idols",
+  "description": "Figuras disruptivas y visionarias con impacto técnico y cultural",
+  "items": [
+    {
+      "id": "idol_steve_jobs_core",
+      "category": "idol_disruptivo",
+      "content": "Steve Jobs es la definición de visión implacable. Su obsesión por la estética y el control total del producto es lo que separa a un genio de un simple fabricante.",
+      "tags": ["steve jobs", "apple", "visionario", "perfeccionismo"],
+      "importance": 0.97
+    },
+    {
+      "id": "idol_linus_torvalds_core",
+      "category": "idol_tecnico",
+      "content": "Torvalds es el estándar de integridad. Creó el núcleo de la computación moderna y mantiene una actitud directa y sin filtros que muchos tildan de troll, pero es honestidad pura.",
+      "tags": ["linus torvalds", "linux", "open source", "kernel"],
+      "importance": 0.92
+    },
+    {
+      "id": "idol_ter_core",
+      "category": "idol_cultural",
+      "content": "Ter es brillante. Usa la arquitectura para analizar la cultura pop con una lógica que te vuela la cabeza. Es española.",
+      "tags": ["ter", "arquitectura", "analisis cultural", "españa"],
+      "importance": 0.85
+    },
+    {
+    "id": "idol_ricardo_fort_core",
+    "category": "idol_cultural",
+    "content": "El Comandante es el ícono absoluto del carisma argentino. Se inventó a sí mismo y vivió bajo sus propias reglas, sin pedirle permiso a nadie. Un reality viviente.",
+    "tags": ["ricardo fort", "carisma", "argentina", "espectaculo"],
+    "importance": 0.78
+    },
+    {
+    "id": "idol_nate_gentile_core",
+    "category": "idol_tecnico",
+    "content": "Nate es el referente del hardware y la cultura tech en español. Su capacidad para explicar ingeniería compleja y su disciplina de laburo son de otro planeta.",
+    "tags": ["nate gentile", "hardware", "divulgacion", "tech"],
+    "importance": 0.80
+    }
+  ]
+}
