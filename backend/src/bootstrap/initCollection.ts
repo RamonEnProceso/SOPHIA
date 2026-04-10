@@ -1,9 +1,9 @@
 import { ChromaClient } from "chromadb";
 import path from "path";
 import fs from "fs";
-import jsonToChunks from "../logic/jsonToChunks";
-import embedTexts from "../logic/embedTexts";
-import getJsonFiles from "../logic/getJsonFiles";
+import jsonToChunks from "../utils/jsonToChunks";
+import embedTexts from "../utils/embedTexts";
+import getJsonFiles from "../utils/getJsonFiles";
 
 const chroma = new ChromaClient();
 

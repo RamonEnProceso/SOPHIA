@@ -1,22 +1,5 @@
 import fs from "fs";
-
-interface KnowledgeItem {
-    id: string;
-    type?: string;        
-    category?: string;    
-    content: string;
-    tags: string[];
-    importance: number;
-    confidence?: number;
-    intensity?: number | null;
-}
-
-
-interface KnowledgeFile {
-    domain: string;
-    description: string;
-    items: KnowledgeItem[];
-}
+import { KnowledgeFile } from "../models/chat";
 
 const jsonToChunks = (path: string): string[] => {
 
