@@ -1,11 +1,10 @@
 from fastapi import FastAPI
+from routers.status import router as status_router
 
 app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello":"World"}
+    return {"status":"online"}
 
-@app.get("/items/{items.id}")
-def read_item(item_id:int, q:str|None = None):
-    return {"item_id": item_id, "q":q}
+app.include_router(status_router)
