@@ -25,10 +25,10 @@
   </tr>
 </table>
 
-Más información en [[arquitecture|la documentación]].
+Más información en [la documentación de arquitectura](./docs/arquitecture.md).
 
 ---
 
 
 ## Documentación
-Ver [[index|/docs]] para ver arquitectura y decisiones técnicas.
+Ver [Índice](./docs/index.md) para ver arquitectura y decisiones técnicas.
