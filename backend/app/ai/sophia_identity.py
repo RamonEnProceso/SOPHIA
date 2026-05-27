@@ -1,9 +1,17 @@
-def identity():
-    with open('identity.md', 'r', encoding="utf-8") as file:
+from pathlib import Path
+
+def load_sophia_identity():
+    
+    path = Path(__file__).parent / "identity.md"
+    
+    with open(path, 'r', encoding="utf-8") as file:
         content = file.read()
     return content
 
-def dialect():
-    with open('dialect.md', 'r', encoding="utf-8") as file:
+def dload_sophia_dialect():
+    
+    path = Path(__file__).parent / "dialect.md"
+    
+    with open(path, 'r', encoding="utf-8") as file:
         content = file.read()
     return content
