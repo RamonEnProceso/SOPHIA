@@ -4,22 +4,25 @@
 
 ## Estructura de carpetas
 
-## 🏗️ Stack actual
+## Stack actual
 - FastAPI + Python
 - Ollama + Qwen 3.5
 - Docker
 
 ### Backend
-app/
-├── ai/          ← prompts y memoria de Sophia
-├── models/      ← definición de esquemas/entidades
-├── routers/     ← endpoints de la API
-└── services/    ← lógica de negocio
 
+```mermaid
+treeView-beta
+            "app/"
+                "ai/"
+                "models/"
+                "routers/"
+                "services/"
+```
 
 ---
 
-## 🏗️ Stack Objetivo
+## Stack Objetivo
 
 ### Backend
 <table align="center">
