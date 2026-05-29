@@ -4,12 +4,6 @@
 
 ## Estructura de carpetas
 
-## Stack actual
-- FastAPI + Python
-- Ollama + Qwen 3.5
-- PostgreSQL
-- Docker
-
 ```
  /SOPHIA
     ├── backend/
@@ -24,6 +18,17 @@
     ├── docker-compose.yml
     └── README.md
 ```
+
+## Stack actual
+- FastAPI + Python
+- Ollama + Qwen 3.5
+- PostgreSQL
+- Docker
+
+## Diagrama de Base de Datos
+
+![Esquema relacional de la base de datos - PostgreSQL](./assets/sophia_db.svg)
+
 ---
 
 ## Stack Objetivo
