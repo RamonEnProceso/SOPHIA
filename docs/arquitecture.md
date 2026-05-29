@@ -7,19 +7,23 @@
 ## Stack actual
 - FastAPI + Python
 - Ollama + Qwen 3.5
+- PostgreSQL
 - Docker
 
-### Backend
-
-```mermaid
-treeView-beta
-            "app/"
-                "ai/"
-                "models/"
-                "routers/"
-                "services/"
 ```
-
+ /SOPHIA
+    ├── backend/
+    │   └── app/
+    │       ├── ai/
+    │       ├── models/
+    │       ├── routers/
+    │       └── services/ 
+    ├── docs/
+    │   └── assets/
+    ├── init/
+    ├── docker-compose.yml
+    └── README.md
+```
 ---
 
 ## Stack Objetivo
