@@ -1,5 +1,4 @@
 from pathlib import Path
-from app.models.chat import chat
 from app.repositories.messages_repository import insert_message
 import json
 
@@ -15,7 +14,7 @@ def load_memory():
     
     return content
 
-def save_memory(memory, new_chat: chat):
+def save_memory(memory, new_chat):
     
     memory.append(new_chat)
     
