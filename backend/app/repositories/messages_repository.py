@@ -1,5 +1,5 @@
 from app.services.psql_service import get_connection
-import psycopg2
+import psycopg
 
 def get_messages():
     
@@ -11,7 +11,7 @@ def get_messages():
             rows = curs.fetchall()
         return rows
     
-    except (Exception, psycopg2.Error) as err:
+    except (Exception, psycopg.Error) as err:
         print(err)
         
     finally:
@@ -32,7 +32,7 @@ def insert_message(
             )
         conn.commit()
     
-    except (Exception, psycopg2.Error) as err:
+    except (Exception, psycopg.Error) as err:
         print(err)
         
     finally:
@@ -46,7 +46,7 @@ def delete_message(id):
             curs.execute("DELETE FROM messages WHERE id = %s",(id,))
         conn.commit()
     
-    except (Exception, psycopg2.Error) as err:
+    except (Exception, psycopg.Error) as err:
         print(err)
         
     finally:

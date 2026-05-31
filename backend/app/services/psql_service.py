@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-import psycopg2
+import psycopg
 import os
 
 load_dotenv()
@@ -7,7 +7,7 @@ load_dotenv()
 def get_connection ():
     
     try:
-        conn = psycopg2.connect(
+        conn = psycopg.connect(
             host=os.getenv("POSTGRES_HOST"),
             port=os.getenv("POSTGRES_PORT"),
             dbname=os.getenv("POSTGRES_DB"),
